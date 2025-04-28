@@ -1,0 +1,119 @@
+body{
+    background-color: #262e3b;;
+
+}
+/* Conteneur principal qui s'ajuste */
+.site-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne par défaut */
+    gap: 5px; /* Espace entre les blocs */
+    padding: 20px;
+}
+
+/* Pour les écrans plus grands, divise l'espace en colonnes */
+@media (min-width: 768px) {
+    .site-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    }
+}
+
+.site_icon {
+    width: 100%; /* S'adapte à la largeur du conteneur */
+    height: auto; /* Conserve le ratio d'aspect de l'image */
+    object-fit: cover; /* Remplit le conteneur tout en conservant un aspect esthétique */
+    border-radius: 5px 5px 0 0;;
+    margin-bottom: 5px; /* Espace sous l'image */
+}
+.blocks {
+    flex-direction: column;
+    position: relative;
+    max-width: 300px;
+    width: 450px;
+    padding: 0;
+    overflow-y: hidden;
+    cursor: default;
+    
+
+    .title1 {
+        font-family: "Montserrat";
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 8px 10px 8px 10px;
+      
+    }
+    .titre{
+        text-decoration: none; 
+        color: white;
+    }
+    
+}
+.exsite {
+    position: relative;
+    background-color: rgba(57, 61, 71, 0.5);
+    width: auto;
+    margin: 10px;
+    height: auto;
+    border-radius: 5px;
+    backdrop-filter: blur(4px);
+    
+    .class-total {
+        font-family: "Montserrat";
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 0px 10px 4px 10px;
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px #272b32 solid;
+    
+        .all-classes {
+            height: fit-content;
+            position: relative;
+            left: 0;
+        }
+    
+        .total-classes {
+            height: fit-content;
+            position: relative;
+            right: 0;
+        }
+    }
+    
+    .class-top {
+        cursor: pointer;
+        font-family: "Montserrat";
+        color: white;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 4px 10px 4px 10px;
+        position: relative;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px #272b32 solid;
+    }
+    
+    .see-more {
+        text-align: center;
+        background-color: transparent;
+        border: none;
+        padding: 6px;
+        width: 100%;
+        font-family: "Montserrat";
+        font-weight: 500;
+        color: #ffffff;
+        cursor: pointer;
+        border-radius: 0px 0px 6px 6px;
+        transition: all 0.2s ease;
+    }
+    
+    .see-more:hover {
+        background-color: #eff1f1;
+        transition: all 0.2s ease;
+    }
+}
